@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
-int main()
-{
-
+int main() {
+    
+    //VARAIVEL PARA RETORNAR AO MENU
     int menu = 1;
 
-    while (menu == 1)
-    {
+    while (menu == 1) {
+        
+        //VARIAVEL PARA ESCOLHA DO JOGO
         int option;
+        
+        //MENU PRINCIPAL DO JOGO
         printf("\n=====GIROTTOS'S GAME=====\n");
 
         printf("1: Pergunta e Resposta\n");
@@ -19,12 +21,14 @@ int main()
 
         scanf("%d", &option);
 
-        while (option == 1)
-        {
+        //==== PERGUNTA E RESPOSTA ====
+        while (option == 1) {
 
+            //ZERANDO AS VARIAVEIS 
             option = 0;
             menu = 0;
 
+            //RESPOSTA DO JOGADOR
             char alternativa1[2];
 
             printf("\n=====PERGUNTA E RESPOSTA=====\n");
@@ -39,19 +43,19 @@ int main()
 
             scanf("%s", &alternativa1[0]);
 
-            if (alternativa1[0] == 'A' || alternativa1[0] == 'a')
-            {
+            if (alternativa1[0] == 'A' || alternativa1[0] == 'a') {
+                
                 printf("\nVOCE ACERTOU !!\n\n");
-            }
-            else
-            {
+                
+            } else {
+                
                 printf("\nERROU !!\n");
                 printf("Pressione '1' para reiniciar: ");
                 scanf("%d", &option);
             }
 
-            if (alternativa1[0] == 'A' || alternativa1[0] == 'a')
-            {
+            if (alternativa1[0] == 'A' || alternativa1[0] == 'a') {
+                
                 char alternativa2[2];
 
                 printf("SEGUNDA PERGUNTA:\nQuanto vale esse trabalho? [A-D]\n");
@@ -63,18 +67,20 @@ int main()
 
                 scanf("%s", &alternativa2[0]);
 
-                if (alternativa2[0] == 'C' || alternativa2[0] == 'c')
-                {
+                if (alternativa2[0] == 'C' || alternativa2[0] == 'c') {
+                    
                     printf("\nVOCE ACERTOU !!\n");
-                }
-                else
-                {
+                    
+                } else {
+                    
                     printf("\nERROU !!\n");
                     printf("Pressione '1' para reiniciar: ");
                     scanf("%d", &option);
+                
                 }
-                if (alternativa2[0] == 'C' || alternativa2[0] == 'c')
-                {
+                
+                if (alternativa2[0] == 'C' || alternativa2[0] == 'c') {
+                    
                     char alternativa3[2];
 
                     printf("TERCEIRA PERGUNTA:\nQual vai ser o game do ano? [A-D]\n");
@@ -86,18 +92,19 @@ int main()
 
                     scanf("%s", &alternativa3[0]);
 
-                    if (alternativa3[0] == 'D' || alternativa3[0] == 'd')
-                    {
+                    if (alternativa3[0] == 'D' || alternativa3[0] == 'd') {
+                        
                         printf("\nVOCE ACERTOU !!\n\n");
-                    }
-                    else
-                    {
+                        
+                    } else {
+                        
                         printf("\nERROU !!\n");
                         printf("Pressione '1' para reiniciar: ");
                         scanf("%d", &option);
                     }
-                    if (alternativa3[0] == 'D' || alternativa3[0] == 'd')
-                    {
+                    
+                    if (alternativa3[0] == 'D' || alternativa3[0] == 'd') {
+                        
                         char alternativa4[2];
 
                         printf("QUARTA PERGUNTA:\nQuanto eh 2 + 2? [A-D]\n");
@@ -109,18 +116,19 @@ int main()
 
                         scanf("%s", &alternativa4[0]);
 
-                        if (alternativa4[0] == 'D' || alternativa4[0] == 'd')
-                        {
+                        if (alternativa4[0] == 'D' || alternativa4[0] == 'd') {
+                            
                             printf("\nVOCE ACERTOU !!\n");
-                        }
-                        else
-                        {
+                            
+                        } else {
+                            
                             printf("\nERROU !!\n");
                             printf("Pressione '1' para reiniciar: ");
-                            scanf("%d", &option);
-                        }
-                        if (alternativa4[0] == 'D' || alternativa4[0] == 'd')
-                        {
+                            scanf("%d", &option);    
+                        } 
+                        
+                        if (alternativa4[0] == 'D' || alternativa4[0] == 'd') {
+                            
                             char alternativa5[2];
 
                             printf("QUINTA PERGUNTA:\nQual a melhor my little poney? [A-D]\n");
@@ -133,28 +141,30 @@ int main()
                             scanf("%s", &alternativa5[0]);
 
 
-                            if (alternativa5[0] == 'A' || alternativa5[0] == 'a')
-                            {
+                            if (alternativa5[0] == 'A' || alternativa5[0] == 'a') {
+                                
                                 printf("\nPARABENS VOCE EH MUITO INTELIGENTE !!\n");
                                 int fim = 0;
-                                if (fim == 0)
-                                {
+                                
+                                if (fim == 0) {
 
                                     printf("Você deseja jogar de novo?:\n");
                                     printf("[S] Pressione '1' \n[N] Pressione '2'\n");
                                     scanf("%d", &fim);
-                                    if (fim == 1)
-                                    {
+                                    
+                                    if (fim == 1) {
+                                        
                                         option = 1;
-                                    }
-                                    else
-                                    {
+                                        
+                                    } else {
+                                        
                                         menu = 1;
+                                        
                                     }
                                 }
                                 
-                            }else
-                                {
+                            } else {
+                                
                                     printf("\nERROU !!\n");
                                     printf("Pressione '1' para reiniciar: ");
                                     scanf("%d", &option);
@@ -165,20 +175,20 @@ int main()
             }
         }
    
-        while (option == 2)
-        {
+        while (option == 2) {
+            
             printf("=====COBRA NA CAIXA=====\n");
             printf("O jogo consiste em...!\n");
         }
 
-        while (option == 3)
-        {
+        while (option == 3) {
+            
             printf("=====GOUSMAS WAR=====\n");
             printf("O jogo consiste em...!\n");
         }
 
-        while (option == 4)
-        {
+        while (option == 4) {
+            
             printf("Obrigado por jogar!\n");
         }
     }  
