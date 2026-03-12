@@ -28,7 +28,7 @@ int main() {
             option = 0;
             menu = 0;
 
-            //RESPOSTA DO JOGADOR
+            //RESPOSTA DO JOGADOR NESSA PERGUNTA
             char alternativa1[2];
 
             printf("\n=====PERGUNTA E RESPOSTA=====\n");
@@ -55,7 +55,8 @@ int main() {
             }
 
             if (alternativa1[0] == 'A' || alternativa1[0] == 'a') {
-                
+
+                //RESPOSTA DO JOGADOR NESSA PERGUNTA
                 char alternativa2[2];
 
                 printf("SEGUNDA PERGUNTA:\nQuanto vale esse trabalho? [A-D]\n");
@@ -80,7 +81,8 @@ int main() {
                 }
                 
                 if (alternativa2[0] == 'C' || alternativa2[0] == 'c') {
-                    
+
+                    //RESPOSTA DO JOGADOR NESSA PERGUNTA
                     char alternativa3[2];
 
                     printf("TERCEIRA PERGUNTA:\nQual vai ser o game do ano? [A-D]\n");
@@ -104,7 +106,8 @@ int main() {
                     }
                     
                     if (alternativa3[0] == 'D' || alternativa3[0] == 'd') {
-                        
+
+                        //RESPOSTA DO JOGADOR NESSA PERGUNTA
                         char alternativa4[2];
 
                         printf("QUARTA PERGUNTA:\nQuanto eh 2 + 2? [A-D]\n");
@@ -128,7 +131,8 @@ int main() {
                         } 
                         
                         if (alternativa4[0] == 'D' || alternativa4[0] == 'd') {
-                            
+
+                            //RESPOSTA DO JOGADOR NESSA PERGUNTA
                             char alternativa5[2];
 
                             printf("QUINTA PERGUNTA:\nQual a melhor my little poney? [A-D]\n");
@@ -144,6 +148,8 @@ int main() {
                             if (alternativa5[0] == 'A' || alternativa5[0] == 'a') {
                                 
                                 printf("\nPARABENS VOCE EH MUITO INTELIGENTE !!\n");
+                                
+                                //VARIAVEL PARA RETORNO AO MENU OU JOGAR NOVAMENTE
                                 int fim = 0;
                                 
                                 if (fim == 0) {
@@ -151,11 +157,13 @@ int main() {
                                     printf("Você deseja jogar de novo?:\n");
                                     printf("[S] Pressione '1' \n[N] Pressione '2'\n");
                                     scanf("%d", &fim);
-                                    
+
+                                    //JOGAR NOVAMENTE
                                     if (fim == 1) {
                                         
                                         option = 1;
-                                        
+
+                                    //RETORNA AO MENU  
                                     } else {
                                         
                                         menu = 1;
